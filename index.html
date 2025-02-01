@@ -37,6 +37,14 @@
        font-weight: 400;
        font-style: normal;
     }
+    .relat{
+        position: relative;
+    }
+    .absol{
+        position: absolute;
+        bottom: 400px;
+        left: 230px;
+    }
    </style>
    <title>Pet Shop</title>
 </head>
@@ -372,7 +380,7 @@
       </section>
     <!-- sec 2 close -->
      <!-- sec 3 -->
-      <div class="px-4 lg:px-36 mb-14 lg:mb-36">    
+      <div class="px-4 lg:px-36 mb-[400px] lg:mb-96">    
             <h2 class="mb-8 lg:mb-12"><span class="font-adlam text-4xl">Everyday low Price</span></h2>
              <div class="grid gap-6 grid-cols-1 lg:grid-cols-[60%_auto]">
         <!-- 1st card -->
@@ -402,10 +410,12 @@
         </div>
       </div>
     <!-- sec 3 close -->
-   </main>
-   <footer class="bg-[#FFDC26] px-4 lg:px-36">
+    </main>
+
+    <!-- footer -->
+   <footer class="relative bg-[#ffdb2684] px-4 lg:px-36">
        <!-- get pawsome news -->
-        <div class="bg-[#FFF9F4] px-3 py-8 grid grid-cols-1 gap-8 lg:grid-cols-[30%_auto] lg:items-center lg:gap-28 lg:px-20 lg:py-10">
+        <div class=" absolute bottom-[450px] left-[16px] right-[16px] lg:bottom-[400px] lg:left-[230px] lg:right-[230px] bg-[#FFF9F4] px-3 py-8 grid grid-cols-1 gap-8 rounded-2xl lg:grid-cols-[30%_auto] lg:items-center lg:gap-28 lg:px-20 lg:py-10">
            <div class="flex justify-center lg:justify-start"><img src="c1-assets/cute-pet-mid.png" alt=""></div>
             <!-- subscription part -->
            <div class="flex flex-col">
@@ -416,8 +426,33 @@
            </div>
         </div>
         <!-- main footer sec -->
-         <div>
-
+         <div class=" grid grid-cols-1 lg:grid-cols-[50%_30%_auto] pt-[400px] lg:pt-72 pb-14 lg:pb-36">
+            <!-- footer brand -->
+            <div class="mb-9 lg:mb-0">
+                <div class="flex items-center gap-x-3 mb-4 lg:mb-6">
+                    <img src="c1-assets/logo-footer.png" alt="logo">
+                    <h3 class="text-xl lg:text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+                </div>
+                  <p class="text-[#111111c5] lg:text-xl lg:pr-48">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+            <!-- footer links -->
+            <div class="mb-9 lg:mb-0">
+                <ul class="flex flex-col gap-5 lg:text-xl">
+                    <li>Find a pet</li>
+                    <li>Breeds</li>
+                    <li>Contact us</li>
+                </ul> 
+            </div>
+            <!-- social media -->
+            <div class="grid grid-cols-1 grid-rows-1 items-end">
+               <h3 class="lg:text-xl">Follow Us</h3>
+               <div class="flex gap-x-8">
+                  <div><i class="text-3xl fa-brands fa-facebook"></i></div>
+                  <div><i class="text-3xl fa-brands fa-instagram"></i></div>
+                  <div><i class="text-3xl fa-brands fa-linkedin"></i></div>
+                  <div><i class="text-3xl fa-brands fa-youtube"></i></div>
+               </div>  
+            </div>
          </div>
    </footer>
 </body>
